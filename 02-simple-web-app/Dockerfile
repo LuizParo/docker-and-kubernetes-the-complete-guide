@@ -4,9 +4,11 @@ FROM node:alpine
 WORKDIR /usr/app
 
 # Install some dependencies
-COPY ./index.js ./
 COPY ./package.json ./
+
 RUN npm install
+
+COPY ./index.js ./
 
 # Default command
 CMD ["npm", "start"]

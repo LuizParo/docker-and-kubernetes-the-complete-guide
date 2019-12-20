@@ -4,7 +4,20 @@
         {
             "name": "client",
             "image": "luizparo/multi-client",
-            "hostname": "client"
+            "hostname": "client",
+            "essential": false
+        },
+        {
+            "name": "server",
+            "image": "luizparo/multi-server",
+            "hostname": "api",
+            "essential": false
+        },
+        {
+            "name": "worker",
+            "image": "luizparo/multi-worker",
+            "hostname": "worker",
+            "essential": false
         }
     ]
 }

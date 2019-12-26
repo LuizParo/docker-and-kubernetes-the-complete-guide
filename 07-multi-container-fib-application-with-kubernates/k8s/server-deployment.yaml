@@ -7,7 +7,7 @@ spec:
     selector:
         matchLabels:
             component: server
-    tenplate:
+    template:
         metadata:
             labels:
                 component: server
